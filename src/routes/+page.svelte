@@ -10,13 +10,14 @@
     />
     <div class="centered">
       <h1 class="title">Donabe</h1>
-      <a href="/browse"> Browse Articles 🠒 </a>
+      <a href="/browse">Browse Articles 🠒</a>
     </div>
   </div></Layout
 >
 
 <style>
   .container {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     margin: 0;

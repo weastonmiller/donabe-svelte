@@ -13,11 +13,11 @@
 
 <style>
   .container {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
-    height: 100%;
     width: 100%;
     height: calc(100vh - 55px);
     background-color: #fdf2e4;
