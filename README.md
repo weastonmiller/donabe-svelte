@@ -68,9 +68,7 @@ I have done some of my own component mapping for certain html tags rendered by `
 
 ## Styles
 
-Being more lightweight than the [React version](https://github.com/weastonmiller/donabe), I made no effort to support anything but a very simple list. Since the idea is to be unopinionated as to what your browse page looks like, it is up to you to implement your own styles.
-
-Here is a link to [svelte-bricks](https://github.com/janosh/svelte-bricks) if you want something that looks good out of the box for blog style content with thumbnails.
+Being more lightweight than the [React version](https://github.com/weastonmiller/donabe), I made no effort to support anything but a very simple list using [svelte-bricks](https://github.com/janosh/svelte-bricks).
 
 ---
 
