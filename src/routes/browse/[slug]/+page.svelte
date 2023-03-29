@@ -48,6 +48,5 @@
     height: fit-content;
     background-color: #fdf2e4;
     margin-top: 55px;
-    padding: 1rem;
   }
 </style>

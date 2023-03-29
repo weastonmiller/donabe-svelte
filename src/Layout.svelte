@@ -1,5 +1,10 @@
 <script lang="ts">
   import { createEventDispatcher } from 'svelte';
+
+  import { page } from '$app/stores';
+
+  export const location = $page.url.pathname;
+
   const dispatch = createEventDispatcher();
   export let scroller = {
     scroll: 0,
@@ -24,7 +29,7 @@
   };
 </script>
 
-<main on:scroll={Scroll}>
+<main on:scroll={Scroll} style={`padding: ${location === '/' ? 0 : '1rem'}`}>
   <slot {scroller} />
 </main>
 
@@ -35,9 +40,11 @@
 
 <style>
   main {
+    box-sizing: border-box;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow-y: auto;
+    overflow-x: hidden;
     font-family: 'IBM Plex Mono';
     background-color: #fdf2e4;
   }
@@ -63,6 +70,7 @@
     justify-content: space-between;
     font-family: 'IBM Plex Mono';
     font-weight: 600;
+    box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.12);
   }
 
   a {
