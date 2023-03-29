@@ -1,12 +1,11 @@
 <script lang="ts">
   export let href: string = '';
-  export let title: any = undefined;
   export let text: string = '';
 </script>
 
 <div class="container">
   <div class="wrapper">
-    <img src={href} {title} alt={text} class="custom-image" />
+    <img src={href} alt={text} class="custom-image" />
   </div>
 </div>
 

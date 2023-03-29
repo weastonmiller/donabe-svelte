@@ -2,6 +2,10 @@
   import Layout from '../../../Layout.svelte';
   import SvelteMarkdown from 'svelte-markdown';
   import MarkdownImage from '../../../components/MarkdownImage.svelte';
+  import MarkdownHeaders from '../../../components/MarkdownHeaders.svelte';
+  import MarkdownParagraph from '../../../components/MarkdownParagraph.svelte';
+  import MarkdownHR from '../../../components/MarkdownHR.svelte';
+  import MarkdownBlockquote from '../../../components/MarkdownBlockquote.svelte';
 
   let articlePromise = preload();
 
@@ -11,7 +15,6 @@
       `../../../../articles/${path.substring(8)}.md`
     );
     const article = await response.text();
-    console.log(article);
     return article;
   }
 </script>
@@ -21,10 +24,19 @@
     {#await articlePromise}
       <div />
     {:then article}
-      <SvelteMarkdown source={article} renderers={{ image: MarkdownImage }} />
+      <SvelteMarkdown
+        source={article}
+        renderers={{
+          image: MarkdownImage,
+          heading: MarkdownHeaders,
+          paragraph: MarkdownParagraph,
+          hr: MarkdownHR,
+          blockquote: MarkdownBlockquote,
+        }}
+      />
     {/await}
-  </div></Layout
->
+  </div>
+</Layout>
 
 <style>
   .container {
@@ -33,15 +45,9 @@
     flex-direction: column;
     margin: 0;
     width: 100%;
-    height: calc(100vh - 55px);
+    height: fit-content;
     background-color: #fdf2e4;
     margin-top: 55px;
     padding: 1rem;
-  }
-
-  .title {
-    color: #212529;
-    transition: 0.2s ease all;
-    margin: 0;
   }
 </style>
