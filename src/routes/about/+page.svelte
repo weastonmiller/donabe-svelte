@@ -4,8 +4,8 @@
 
 <Layout let:scroller>
   <div class="container">
-    <h1 class="title">Donabe</h1>
-    <p>A bring your own ingredients markdown article viewer</p>
+    <h1 class="title">Svelte Donabe</h1>
+    <p>The Svelte flavor of the bring your own ingredients markdown article viewer</p>
   </div></Layout
 >
 
