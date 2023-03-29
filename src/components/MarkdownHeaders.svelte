@@ -14,26 +14,39 @@
 {:else if depth === 5}
   <h5><slot /></h5>
 {:else if depth === 6}
-  <div>
-    <p><slot /></p>
-  </div>
+  <h6><slot /></h6>
 {:else}
   {raw}
 {/if}
 
 <style>
-  div {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1rem;
+  h1 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
-  p {
+  h2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  h4 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  h5 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  h6 {
     height: fit-content;
     font-style: italic;
     margin: 0;
+    font-size: 12pt;
     font-weight: 200;
+    align-self: center;
+    margin-bottom: 1rem;
   }
 </style>

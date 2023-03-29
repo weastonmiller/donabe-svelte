@@ -18,6 +18,7 @@
     overflow: hidden;
     align-items: center;
     justify-content: center;
+    margin-top: 0.5rem;
   }
   .wrapper {
     display: flex;

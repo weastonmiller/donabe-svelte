@@ -29,7 +29,7 @@ export const articles: Array<Article> = [
     thumbnail:
       'https://assets.bonappetit.com/photos/57c59f63a184a3c9209db716/4:3/w_4911,h_3683,c_limit/hot-pot-donabe-chopsticks.jpg',
     created: 'Monday March 27th, 2023',
-    path: '1',
+    path: '0',
   },
   {
     _id: 3,
