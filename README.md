@@ -65,7 +65,7 @@ The `/.md` articles are rendered using `svelte-markdown`. There is no compilatio
 
 I have done some of my own component mapping for certain html tags rendered by `svelte-markdown` and these can be found in the `/components` folder. It's small things like making the `h6` tag into a subtitle type tag for images, doing some image width fixing, etc. Feel free to change anything here to your liking.
 
-**Disclaimer** - I did not make this with code rendering in mind, so that will require some setup. As is, it does technically render `<code />` with the default styling supplied by `svelte-markdown` but that's it. [Please refer to their documentation for more information](https://github.com/pablo-abc/svelte-markdown). _It may be possible to do more serious formatting via syntax highlighting, if I am reading this right at least: [shiki-code-highlighting](https://github.com/rodneylab/sveltekit-shiki-code-highlighting)_
+**Disclaimer** - I did not make this with code rendering in mind, so that will require some setup. As is, it does technically render `<code />` with the default styling supplied by `svelte-markdown` but that's it. [Please refer to their documentation for more information](https://github.com/pablo-abc/svelte-markdown). _It may be possible to do more serious formatting via syntax highlighting: [shiki-code-highlighting](https://github.com/rodneylab/sveltekit-shiki-code-highlighting)_
 
 ---
 
