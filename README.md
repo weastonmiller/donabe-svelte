@@ -1,5 +1,6 @@
 # Svelte - Donabe
 
+
 ## The svelte flavor of the bring your own ingredients markdown article viewer
 
 ## Why?
@@ -37,7 +38,7 @@ npm run preview
 
 ## Architecture
 
-The articles are `.md` files written directly in the respository in the `/static/articles` directory. In order to access them on the `/browse` page there is a mapping in the `articles.ts` file in which you give some metadata about the article that looks like this:
+The articles are `.md` files written directly in the repository in the `/static/articles` directory. In order to access them on the `/browse` page there is a mapping in the `articles.ts` file in which you give some metadata about the article that looks like this:
 
 ```
 {
